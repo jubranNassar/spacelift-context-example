@@ -1,5 +1,6 @@
 resource "random_string" "string" {
-  length = 10
+  length  = 10
+  special = false
 }
 
 resource "spacelift_context" "string-result" {
