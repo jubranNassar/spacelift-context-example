@@ -12,3 +12,7 @@ resource "spacelift_environment_variable" "random-string-result" {
   name       = "random-string-result"
   value      = random_string.string.result
 }
+
+output "string" {
+  value = random_string.string.result
+}
