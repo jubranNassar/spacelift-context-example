@@ -15,5 +15,5 @@ resource "spacelift_environment_variable" "random-string-result" {
 }
 
 output "string" {
-  value = random_string.string.id
+  value = random_string.this.id
 }
