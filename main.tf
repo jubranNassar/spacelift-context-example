@@ -10,8 +10,8 @@ resource "spacelift_context" "string-result" {
 
 resource "spacelift_environment_variable" "random-string-result" {
   context_id = spacelift_context.string-result.id
-  name       = "random-string-result"
-  value      = "${random_string.this.id}"
+  name       = "random string result"
+  value      = random_string.this.id
 }
 
 output "string" {
